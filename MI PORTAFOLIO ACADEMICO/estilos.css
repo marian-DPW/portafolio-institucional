@@ -1,0 +1,730 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Righteous&display=swap');
+*{
+box-sizing: border-box;
+font-family: 'work Sans';
+margin: 0;
+padding: 0;
+}
+html {
+   scroll-behavior: smooth;
+}
+/*Menú*/
+.contenedor-header {
+   background: #1abc9c;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 99;
+}
+.contenedor-header header {
+   max-width: 1100px;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 15px 20px;
+}
+.contenedor-header header .logo a {
+   font-family: 'righteous';
+   font-size: 36px;
+   color: #d1f2eb;
+   text-decoration: none;
+}
+.contenedor-header header ul {
+   display: flex;
+   list-style: none;
+}
+.contenedor-header header nav ul li a {
+   text-align: none;
+   color: #d1f2eb;
+   margin: 0 15px;
+   padding: 2px;
+   transition: .5s;
+   text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover {
+   color: #2492db;
+}
+.nav-responsive {
+   background-color: #1abc9c;
+   color:  #d1f2eb;
+   padding: 5px 10px;
+   border-radius: 5px;
+   cursor: pointer;
+   display: none;
+}
+/*Seccion inicio*/
+.inicio {
+   background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+      url(img/WhatsApp\ Image\ 2025-04-19\ at\ 15.38.44.jpeg);
+   background-size: cover;
+   height: 100vh;
+   color: #f5eef8;
+   display: flex;
+   align-items: center;
+}
+.inicio .contenido-banner {
+   padding: 20px;
+   background-color: #070808;
+   max-width: 350px;
+   margin: auto;
+   text-align: center;
+   border-radius: 40px;
+}
+.inicio .contenido-banner img {
+   margin-top: 40px;
+   border: 5px solid #1abc9c;
+   display: block;
+   width: 80%;
+   margin: auto;
+}
+.inicio .contenido-banner h1 {
+   margin-top: 40px;
+   font-size: 42px;
+   font-family: 'Righteous';
+}
+.inicio .contenido-banner h2 {
+   font-size: 15px;
+   font-weight: normal;
+}
+.inicio .contenido-banner .redes a {
+   color: #f5eef8;
+   display: inline-block;
+   text-decoration: none;
+   border: 1px solid #f5eef8;
+   border-radius: 100%;
+   width: 42px;
+   height: 42px;
+   line-height: 42px;
+   margin: 40px 5px;
+   font-size: 20px;
+   transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover {
+   background-color: #1abc9c;
+}
+/*seccion perfil*/
+.perfil {
+   background-color: #1e2326;
+   color: #fff;
+   padding: 50px 20px;
+
+}
+.perfil .contenido-seccion {
+   max-width: 1100px;
+   margin: auto;
+}
+/* Sección de perfil al centro */
+.perfil-personal {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   padding: 50px 20px;
+   background-color: #1e2326;
+   color: #fff;
+}
+
+/* Tarjeta de perfil */
+.tarjeta-perfil {
+   background-color: #252A2E;
+   padding: 30px;
+   border-radius: 20px;
+   max-width: 800px;
+   width: 100%;
+   box-shadow: 0 4px 15px#P(0, 0, 0, 0.5);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* Imagen de perfil */
+.foto-perfil img {
+   width: 180px;
+   height: 180px;
+   object-fit: cover;
+   border-radius: 50%;
+   border: 4px solid #1abc9c;
+   margin-bottom: 20px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Títulos e información */
+.info-perfil h3 {
+   font-size: 24px;
+   color: #1abc9c;
+   margin: 15px 0 5px;
+}
+
+.info-perfil p {
+   font-size: 16px;
+   line-height: 1.6;
+   margin-bottom: 20px;
+   padding: 0 10px;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+   .tarjeta-perfil {
+      padding: 20px;
+   }
+
+   .foto-perfil img {
+      width: 140px;
+      height: 140px;
+   }
+
+   .info-perfil h3 {
+      font-size: 20px;
+   }
+
+   .info-perfil p {
+      font-size: 14px;
+   }
+}
+.perfil h2 {
+   font-size: 48px;
+   font-family: 'Righteous';
+   text-align: center;
+   padding: 20px 0;
+}
+.perfil .contenido-seccion p {
+   font: 18px;
+   line-height: 22px;
+   margin-bottom: 20px;
+}
+.perfil .contenido-seccion p span {
+   color: #1abc9c;
+   font-weight: bold;
+}
+.perfil .fila {
+   display: flex;
+}
+.perfil .fila .col {
+   width: 50%;
+}
+.perfil .fila .col h3 {
+   font-size: 28px;
+   font-family: 'Righteous';
+   margin-bottom: 25px;
+}
+.perfil .fila .col ul {
+   list-style: none;
+}
+.perfil .fila .col ul li {
+   margin: 12px 0;
+}
+
+.perfil .fila .col ul li strong {
+   display: inline-block;
+   color: #1abc9c;
+   width: 130px;
+}
+.perfil .fila .col ul li span {
+   background-color: #1abc9c;
+   padding: 3px;
+   font-weight: bold;
+   border-radius: 5px;
+}
+.perfil .fila .col .contenedor-intereses {
+   display: flex;
+   flex-wrap: wrap;
+}
+.perfil .fila .col .contenedor-intereses .interes {
+   width: 100px;
+   height: 100px;
+   background-color: #252A2E;
+   border-radius: 10px;
+   margin: 0 15px 15px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transition: .3s;
+}
+.perfil .fila .col .contenedor-intereses .interes:hover {
+   background-color: #1abc9c;
+}
+.perfil .fila .col .contenedor-intereses .interes i {
+   font-size: 30px;
+   margin-bottom: 10px;
+}
+.perfil .button{
+   cursor: pointer;
+   background-color: transparent;
+   border: 2px solid #fff;
+   width: fit-content;
+   display: block;
+   margin: 20px auto;
+   padding: 10px 22px;
+   font-size: 16px;
+   color:#fff;
+   position: relative;
+   z-index: 10;
+}
+.perfil button .overlay{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   background-color: #1cb698;
+   z-index: 1;
+   transition: 1s;
+}
+.perfil button:hover .overlay{
+   width: 100%;
+}
+/*indice*/
+.indice {
+   background-color: #1e2326;
+   color: #fff;
+   padding: 50px 20px;
+}
+.indice .contenido-seccion {
+   max-width: 1100px;
+   margin: auto;
+}
+.indice h2 {
+   font-size: 48px;
+   font-family: 'Righteous';
+   text-align: center;
+   padding: 20px 0;
+}
+.indice .contenido-seccion p {
+   font: 18px;
+   line-height: 22px;
+   margin-bottom: 20px;
+}
+.indice .contenido-seccion p span {
+   color: #1abc9c;
+   font-weight: bold;
+}
+.indice .fila {
+   display: flex;
+}
+.indice .fila .col {
+   width: 50%;
+}
+.indice .fila .col h3 {
+   font-size: 28px;
+   font-family: 'Righteous';
+   margin-bottom: 25px;
+}
+.indice .fila .col ul {
+   list-style: none;
+}
+.indice .fila .col ul li {
+   margin: 12px 0;
+}
+.indice .fila .col ul li strong {
+   display: inline-block;
+   color: #1abc9c;
+   width: 130px;
+}
+.indice .fila .col ul li span {
+   background-color: #1abc9c;
+   padding: 3px;
+   font-weight: bold;
+   border-radius: 5px;
+}
+.indice .fila .col .contenedor-intereses {
+   display: flex;
+   flex-wrap: wrap;
+}
+.indice .fila .col .contenedor-intereses .interes {
+   width: 100px;
+   height: 100px;
+   background-color: #252A2E;
+   border-radius: 10px;
+   margin: 0 15px 15px 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transition: .3s;
+}
+.indice .fila .col .contenedor-intereses .interes:hover {
+   background-color: #1abc9c;
+}
+.indice .fila .col .contenedor-intereses .interes i {
+   font-size: 30px;
+   margin-bottom: 10px;
+}
+/* Estilo rápido solo para ver estructura */
+body {
+   font-family: Arial, sans-serif;
+   scroll-behavior: smooth;
+}
+header {
+   background-color: #1abc9c;
+   padding: 20px;
+   position: sticky;
+   top: 0;
+   z-index: 10;
+}
+header nav a {
+   color: white;
+   margin: 0 15px;
+   text-decoration: none;
+   font-weight: bold;
+}
+section {
+   padding: 50px;
+   border-bottom: 1px solid #ccc;
+}
+h2 {
+   color: #1abc9c;
+}
+/* Sección Objetivos del Portafolio */
+.objetivos {
+   background-color: #f5f5f5;
+   padding: 60px 20px;
+   text-align: center;
+}
+
+.objetivos h2 {
+   font-size: 2.5em;
+   margin-bottom: 20px;
+   color:1abc9c;
+}
+
+.objetivos .intro {
+   font-size: 1.1em;
+   max-width: 800px;
+   margin: 0 auto 30px auto;
+   color: #333;
+   line-height: 1.6;
+}
+
+.lista-objetivos {
+   list-style: none;
+   padding: 0;
+   margin: 0 auto;
+   max-width: 700px;
+   text-align: left;
+}
+
+.lista-objetivos li {
+   background: #ffffff;
+   border-left: 5px solid #1abc9c;
+   margin: 10px 0;
+   padding: 15px 20px;
+   border-radius: 8px;
+   color: #333;
+   font-size: 1em;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+   transition: transform 0.2s;
+}
+
+.lista-objetivos li:hover {
+   transform: translateX(5px);
+   background-color: #eaf2fb;
+}
+/* Sección de Evidencias Académicas */
+.evidencias {
+   background-color: #fff;
+   padding: 60px 20px;
+   text-align: center;
+}
+
+.evidencias h2 {
+   font-size: 2.5em;
+   margin-bottom: 20px;
+   color: #1a1a1a;
+}
+
+.evidencias .intro {
+   font-size: 1.1em;
+   max-width: 800px;
+   margin: 0 auto 40px auto;
+   color: #444;
+   line-height: 1.6;
+}
+
+.contenedor-evidencias {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   gap: 30px;
+   justify-items: center;
+}
+
+.tarjeta-evidencia {
+   background: #f9f9f9;
+   border-radius: 12px;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+   overflow: hidden;
+   transition: transform 0.3s ease;
+   max-width: 320px;
+   text-align: left;
+}
+
+.tarjeta-evidencia:hover {
+   transform: scale(1.03);
+}
+
+.tarjeta-evidencia img {
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+}
+
+.tarjeta-evidencia h3 {
+   margin: 15px;
+   font-size: 1.2em;
+   color: #1abc9c;
+}
+
+.tarjeta-evidencia p {
+   margin: 0 15px 15px 15px;
+   color: #666;
+   font-size: 0.95em;
+}
+/* Sección de Reflexiones Personales */
+.reflexiones {
+   background-color: #f0f4f8;
+   padding: 60px 20px;
+   text-align: center;
+}
+
+.reflexiones h2 {
+   font-size: 2.5em;
+   margin-bottom: 0px;
+   color: #1a1a1a;
+}
+
+.reflexiones .intro {
+   font-size: 1.1em;
+   max-width: 800px;
+   margin: 0 auto 40px;
+   color: #444;
+   line-height: 1.6;
+}
+
+.bloques-reflexion {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+   gap: 30px;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.bloque {
+   background: #ffffff;
+   padding: 20px 25px;
+   border-radius: 10px;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+   transition: transform 0.3s ease;
+   text-align: left;
+}
+
+.bloque:hover {
+   transform: translateY(-5px);
+   background-color: #e9f2fb;
+}
+
+.bloque h3 {
+   margin-bottom: 10px;
+   color: #1abc9c;
+   font-size: 1.2em;
+}
+
+.bloque p {
+   color: #555;
+   line-height: 1.6;
+   font-size: 1em;
+}
+/* Sección de Competencias Desarrolladas */
+.competencias {
+   background-color: #ffffff;
+   padding: 60px 20px;
+   text-align: center;
+}
+
+.competencias h2 {
+   font-size: 2.5em;
+   margin-bottom: 20px;
+   color: #1a1a1a;
+}
+
+.competencias .intro {
+   font-size: 1.1em;
+   max-width: 800px;
+   margin: 0 auto 40px;
+   color: #444;
+   line-height: 1.6;
+}
+
+.grid-competencias {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 30px;
+   max-width: 1000px;
+   margin: 0 auto;
+}
+
+.tarjeta-competencia {
+   background: #f8f9fa;
+   padding: 30px 20px;
+   border-radius: 12px;
+   box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+   transition: transform 0.3s ease;
+   text-align: center;
+}
+
+.tarjeta-competencia:hover {
+   transform: translateY(-5px);
+   background-color: #e8f0fe;
+}
+
+.icono {
+   font-size: 2.5em;
+   margin-bottom: 15px;
+   color: #1abc9c;
+}
+
+.tarjeta-competencia h3 {
+   font-size: 1.3em;
+   margin-bottom: 10px;
+   color: #1abc9c;
+}
+
+.tarjeta-competencia p {
+   font-size: 0.95em;
+   color:#1abc9c;
+   line-height: 1.5;
+}
+/* Sección de Habilidades Digitales */
+.habilidades {
+   background-color: #f9fbfd;
+   padding: 60px 20px;
+   text-align: center;
+}
+
+.habilidades h2 {
+   font-size: 2.5em;
+   margin-bottom: 20px;
+   color: #1a1a1a;
+}
+
+.habilidades .intro {
+   font-size: 1.1em;
+   max-width: 800px;
+   margin: 0 auto 40px;
+   color: #444;
+   line-height: 1.6;
+}
+
+.lista-habilidades {
+   max-width: 800px;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   gap: 25px;
+}
+
+.habilidad h3 {
+   font-size: 1.1em;
+   margin-bottom: 8px;
+   color: #1abc9c;
+}
+
+.barra {
+   background-color: #e0e0e0;
+   border-radius: 10px;
+   height: 20px;
+   width: 100%;
+   overflow: hidden;
+}
+
+.progreso {
+   height: 100%;
+   background-color: #1abc9c;
+   border-radius: 10px 0 0 10px;
+   transition: width 1s ease-in-out;
+}
+
+/* Íconos */
+.habilidad i {
+   margin-right: 8px;
+   color: #1abc9c;
+}/* Sección de Anexos */
+.anexos {
+   background-color: #ffffff;
+   padding: 60px 20px;
+   text-align: center;
+}
+
+.anexos h2 {
+   font-size: 2.5em;
+   margin-bottom: 20px;
+   color: #1a1a1a;
+}
+
+.anexos .intro {
+   font-size: 1.1em;
+   max-width: 800px;
+   margin: 0 auto 40px;
+   color: #444;
+   line-height: 1.6;
+}
+
+.galeria-anexos {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+   gap: 20px;
+   max-width: 1000px;
+   margin: 0 auto 40px;
+}
+
+.anexo-item {
+   background: #f1f3f5;
+   border-radius: 10px;
+   padding: 15px;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+   transition: transform 0.3s ease;
+}
+
+.anexo-item:hover {
+   transform: scale(1.03);
+}
+
+.anexo-item img {
+   width: 100%;
+   border-radius: 8px;
+   margin-bottom: 10px;
+}
+
+.anexo-item p {
+   font-size: 0.95em;
+   color: #333;
+}
+
+/* Botón de descarga */
+.descarga .boton-descarga {
+   display: inline-block;
+   padding: 12px 25px;
+   background-color:#1abc9c;
+   color: #fff;
+   font-weight: bold;
+   text-decoration: none;
+   border-radius: 8px;
+   transition: background-color 0.3s ease;
+}
+
+.descarga .boton-descarga:hover {
+   background-color:#1abc9c;
+
+}
+{ 
+   "background.fullscreen" :  { 
+     "image" :  "https://pathtoimage.png" ,  // url de tu imagen 
+     // "image": ["https://pathtoimage.png"], // Una matriz puede ser útil cuando se establece el intervalo para el carrusel 
+     "opacity" :  0.91 ,  // 0.85 ~ 0.95 recomendado 
+     "size" :  "cover" ,  // también css, `cover` para autoadaptación (recomendado)，o `contain`、`200px 200px` 
+     "position" :  "center" ,  // alias de `background-position`, predeterminado `center` 
+     "interval" :  0  // segundos de intervalo para el carrusel, predeterminado `0` para deshabilitado. 
+   } 
+ }
